@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>.container{width: 100%;position: relative;}.item{width: 100px;height: 100px;background-color: #ccc;color: #fff;border: 1px solid #fbfbfb;position: absolute;}</style>
+</head>
+<body>
+  <div ng-controller="Ctrl" class="container">
+    <div ng-repeat="item in list" rock class="item" ng-style="{'left': item.left}" ng-model='item'>
+      <h3>{{item.name}}</h3>
+      <p ng-if="item.show">{{item.desc}}</p>
+      <p ng-if="item.show">{{item.desc}}</p>
+      <p ng-if="item.show">{{item.desc}}</p>
+    </div>
+  </div>
+  <script src="lib/angular.js"></script>
+  <script src="lib/TweenMax.js"></script>
+  <script src="rock.js"></script>
+</body>
+</html>
